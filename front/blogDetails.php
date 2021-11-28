@@ -262,10 +262,10 @@ if (
                             <?php
                             }
                             ?>
-                            <form action="" method="POST">
+                            <form action="" method="POST" name="f">
                                     <input type="textarea" name="contenuC" id="contenuC">
                                     <input type="hidden" value=<?PHP echo $blog['id_blog']; ?> name="id_blog" id="id_blog">
-                                    <input type="submit" value="Envoyer">
+                                    <input type="submit" value="Envoyer" onclick="Verif();">
                                 </form>
 
                         </div>
@@ -359,7 +359,7 @@ if (
     <script src="js/chatScript.js" type="text/javascript"></script>
     <script src="js/active.js"></script>
 
-
+    <script src="comment.js"></script>
 
 </body>
 

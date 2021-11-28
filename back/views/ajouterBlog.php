@@ -108,7 +108,7 @@
             <?php echo $error; ?>
         </div>
         
-        <form action="ajouterBlog.php" method="POST" enctype="multipart/form-data">
+        <form action="ajouterBlog.php" method="POST" enctype="multipart/form-data" name="f">
             <table border="1" align="center">
 				<tr>
                     <td>
@@ -140,14 +140,15 @@
                 <tr>
                     <td></td>
                     <td>
-                        <input type="submit" value="Envoyer" name="upload"> 
+                        <input type="submit" value="Envoyer" name="upload"  > 
                     </td>
                     <td>
-                        <input type="reset" value="Annuler" >
+                        <input type="reset" value="Annuler" onclick="reset();" >
                     </td>
                 </tr>
                 
             </table>
         </form>
+        <script src="blog.js "></script>
     </body>
 </html>
